@@ -4,10 +4,10 @@ import Home from './assets/Home'
 import About from './assets/About'
 import Project from './assets/Project'
 import Contact from './assets/Contact'
-import { Route, Routes } from 'react-router-dom'
-import styled from 'styled-components'
-import Navbar from './components/navbar'
-import Footer from './components/Footer'
+import Navbar from './components/Navbar'
+
+
+
 
 
 
