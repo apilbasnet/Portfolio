@@ -21,10 +21,10 @@ function App() {
 
   return (
 
-    <main className='h-screen overflow-hidden font-montserrat   '>
+    <main className=' overflow-hidden font-montserrat   '>
       <Navbar homeRef={homeRef} />
 
-      <div className='overflow-y-auto h-screen  scroll-smooth overflow-x-hidden scrollbar-hide' style={{ scrollSnapType: 'y mandatory' }}>
+      <div className='     scroll-smooth overflow-y-hidden overflow-x-hidden ' >
 
         <Home homeRef={homeRef} />
         <Project />

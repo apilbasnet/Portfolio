@@ -6,10 +6,10 @@ import Footer from '../components/Footer'
 export default function Contact() {
 
   return (
-    <div className=' flex flex-col h-screen snap-center bg-zinc-900 ' >
+    <div className=' flex flex-col  snap-center bg-zinc-900  ' >
 
-      <div className=' flex flex-col text-slate-100 mx-24 px-40 py-16 text-2xl'>
-        <div className='flex flex-col w-1/2 m-2 px-4 justify-center'>
+      <div className=' flex flex-col text-slate-100  py-16 text-2xl max-w-[1140px] m-auto   '>
+        <div className='flex flex-col w-1/2 m-2 px-4 justify-center '>
           Contact  <br />
           Interested in working together? Let's connect via email or LinkedIn
         </div>

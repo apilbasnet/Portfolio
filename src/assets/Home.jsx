@@ -5,7 +5,7 @@ export default function home() {
 
 
   return (
-    <div className='h-screen snap-center flex items-center mx-24'>
+    <div className='      h-[calc(100vh-50px)] snap-center flex items-center mx-5 lg:max-w-[1140px] lg:mx-auto'>
       <h1 className='text-8xl  font-semibold' >
         Apil 
         <h1>

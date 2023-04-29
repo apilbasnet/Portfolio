@@ -6,8 +6,8 @@ import { NavLink } from 'react-router-dom'
 
 export default function ProjCard() {
     return (
-        <div className='workcontainer '>
-            <h1 className='project-heading text-center  text-2xl font-bold mb-1'>Projects </h1>
+        <div className='workcontainer  md:mx-5 sm:mx-20 '>
+            <h1 className='project-heading  mb-9 max-w-[1140px] m-auto  text-2xl font-bold '>Projects </h1>
             <div className='proj-container max-w-[1140px] m-auto grid grid-cols-1  md:grid-cols-2  lg:grid-cols-3 gap-[25px]   text-sm text-center'>
                 <div className='project-card  flex flex-col    '>
 
