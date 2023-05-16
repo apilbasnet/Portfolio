@@ -13,7 +13,7 @@ export default function Navbar() {
     }
 
     return (
-        <nav className='  top-0 h-[50px] flex flex-row items-center justify-between  text-2xl   mx-5 lg:max-w-[1280px] lg:mx-auto'>
+        <nav className='  top-[0] h-[50px] flex flex-row items-center justify-between  text-2xl     fixed w-full transition duration-300 lg:px-14 bg-slate-100 '>
             <Link to="#" onClick={scrollTop}>
                 <h1 className='font-bold'>Portfolio</h1>
             </Link>

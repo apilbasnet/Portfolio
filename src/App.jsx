@@ -21,8 +21,7 @@ function App() {
 
   return (
 
-    <main className=' overflow-hidden font-montserrat   '>
-      <Navbar homeRef={homeRef} />
+    <main className=' overflow-hidden font-montserrat  bg-slate-50 '>
 
       <div className='     scroll-smooth overflow-y-hidden overflow-x-hidden ' >
 
@@ -33,6 +32,7 @@ function App() {
 
 
 
+        <Navbar homeRef={homeRef} />
       </div>
     </main>
   )
