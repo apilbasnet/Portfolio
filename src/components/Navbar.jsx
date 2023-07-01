@@ -1,16 +1,25 @@
 import React from 'react'
+import { useScroll, animate } from 'framer-motion'
 
 import { Link } from "react-router-dom"
 
 
 export default function Navbar() {
+    const { scrollY } = useScroll();
+
+
     function scrollTop() {
         window.scrollTo(document.body.scrollHeight, 0)
     }
 
-    const scrollBot = () => {
+    function scrollBot() {
         window.scrollTo(0, document.body.scrollHeight)
     }
+
+
+
+
+
 
     return (
         <nav className='  top-[0] h-[50px] flex flex-row items-center justify-between  text-2xl     fixed w-full transition duration-300 lg:px-14 bg-zinc-900 text-white '>
