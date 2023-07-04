@@ -1,9 +1,9 @@
 import { Fragment, useRef, useState } from 'react'
 import './index.css'
-import Home from './assets/Home'
-import About from './assets/About'
-import Project from './assets/Project'
-import Contact from './assets/Contact'
+import Home from './pages/Home'
+import About from './pages/About'
+import Project from './pages/Project'
+import Contact from './pages/Contact'
 import Navbar from './components/Navbar'
 
 
@@ -14,10 +14,6 @@ import Navbar from './components/Navbar'
 
 function App() {
   const homeRef = useRef(null);
-
-
-
-
 
   return (
 

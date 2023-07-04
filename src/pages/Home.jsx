@@ -28,7 +28,7 @@ export default function home() {
       <div className='bg-gradient-to-r  from-blue-500 to-cyan-500  text-white    min-w-screen  flex flex-row  mb-14  '>
         <div className='  flex-row lg:flex md:flex justify-between  items-center  py-10  mx-2 lg:max-w-[1140px] lg:mx-auto  w-[1140px] font-medium text-lg  '>
 
-          <div className='text-left'>
+          <div className=''>
             I like to think creatively and make simple, clear<br />and usable UI/UX for easier navigation.
           </div>
 

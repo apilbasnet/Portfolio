@@ -1,11 +1,17 @@
 import React from 'react'
-import { useScroll, animate } from 'framer-motion'
+import {
+    useScroll,
+    motion,
+    useMotionTemplate,
+    useMotionValue,
+    useTransform
+} from 'framer-motion'
 
 import { Link } from "react-router-dom"
 
 
 export default function Navbar() {
-    const { scrollY } = useScroll();
+
 
 
     function scrollTop() {

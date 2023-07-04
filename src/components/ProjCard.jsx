@@ -1,15 +1,47 @@
-import React from 'react'
+import { React, useEffect, useState } from 'react'
 import img1 from '/img/cloud.jpg'
 import img2 from '/img/flowers.jpg'
 import img3 from '/img/moon.jpg'
 import img4 from '/img/mountain.jpg'
 import { Link } from 'react-router-dom'
+import { motion, useAnimation } from 'framer-motion'
+import { useInView } from 'react-intersection-observer'
 
 
 
 export default function ProjCard() {
+
+
+    const { ref, inView } = useInView();
+    const animation = useAnimation();
+    const [selectedId, setSelectedId] = useState(null)
+
+
+    const items = [
+        
+    ]
+
+
+
+    useEffect(() => {
+        console.log("inView = ", inView);
+        if (inView) {
+            animation.start({
+                x: 0,
+                transition: {
+                    type: 'spring', duration: 1, bounce: 0.3
+                }
+            })
+        }
+
+        if (!inView) {
+            animation.start({ x: '-100vw' })
+        }
+
+    }, [inView]);
+
     return (
-        <div className='workcontainer  md:mx-5 sm:mx-20 '>
+        <div ref={ref} className='workcontainer  md:mx-5 sm:mx-20 '>
             <h1 className='flex  justify-between items-center project-heading  mb-9 max-w-[1140px] m-auto  text-3xl font-bold '>
                 <h2>
                     Projects
@@ -20,7 +52,12 @@ export default function ProjCard() {
                 </Link>
 
             </h1>
-            <div className='proj-container max-w-[1140px] m-auto grid grid-cols-1  lg:grid-cols-3   gap-[25px]   text-sm  '>
+
+
+
+            <motion.div className='proj-container max-w-[1140px] m-auto grid grid-cols-1  lg:grid-cols-3   gap-[25px]   text-sm  '
+                animate={animation}
+            >
                 <div className='  lg:col-span-2   flex flex-col overflow-hidden     h-80'>
 
                     <img src={img1} alt="demo" className='   object-cover w-full h-full ' />
@@ -116,7 +153,7 @@ export default function ProjCard() {
 
 
 
-            </div>
+            </motion.div>
 
 
 
