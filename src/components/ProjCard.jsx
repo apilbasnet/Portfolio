@@ -1,15 +1,12 @@
 import { React, useEffect, useState } from 'react'
-import img1 from '/img/cloud.jpg'
-import img2 from '/img/flowers.jpg'
-import img3 from '/img/moon.jpg'
-import img4 from '/img/mountain.jpg'
+import { Projects } from '../utils/config'
 import { Link } from 'react-router-dom'
 import { motion, useAnimation } from 'framer-motion'
 import { useInView } from 'react-intersection-observer'
 
 
 
-export default function ProjCard() {
+export default function ProjCard(props) {
 
 
     const { ref, inView } = useInView();
@@ -18,7 +15,7 @@ export default function ProjCard() {
 
 
     const items = [
-        
+
     ]
 
 
@@ -55,22 +52,23 @@ export default function ProjCard() {
 
 
 
-            <motion.div className='proj-container max-w-[1140px] m-auto grid grid-cols-1  lg:grid-cols-3   gap-[25px]   text-sm  '
+
+            <motion.div className=' proj-container max-w-[1140px] m-auto grid grid-cols-1  lg:grid-cols-3   gap-[25px]   text-sm  '
                 animate={animation}
             >
                 <div className='  lg:col-span-2   flex flex-col overflow-hidden     h-80'>
 
-                    <img src={img1} alt="demo" className='   object-cover w-full h-full ' />
+                    <img src={Projects[0].img} alt="demo" className='blur-sm   object-cover w-full h-full ' />
 
                     <div className=' text-white absolute inset-auto p-10 translate-y-36 lg:max-w-[50%] md:max-w-[70%%] '>
                         <h2 className=' font-semibold text-3xl mb-2'>
-                            Demo-1
+                            {Projects[0].name}
                         </h2>
                         <p className='mb-2 font-semibold text-xs'>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto corporis accusamus quas asperiores commodi voluptatem totam,
+                            {Projects[0].description}
                         </p>
                         <div className='font-medium'>
-                            <a href="#">Find out more
+                            <a href={` ${Projects[0].link} ` } target='_blank' rel="noreferrer">Find out more
 
                             </a>
 
@@ -82,17 +80,17 @@ export default function ProjCard() {
                 </div>
 
                 <div className='project-card  flex flex-col      overflow-hidden     h-80'>
-                    <img src={img2} alt="demo" className='object-cover w-full h-full' />
+                    <img src={Projects[1].img} alt="demo" className='object-cover blur-sm w-full h-full' />
                     <div className='text-white absolute inset-auto p-10 translate-y-36 lg:max-w-[25%] md:max-w-[70%%] '>
                         <h2 className='font-semibold text-3xl mb-2'>
-                            Demo-2
+                            {Projects[1].name}
                         </h2>
                         <p className='mb-2 font-semibold text-xs'>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod
+                            {Projects[1].description}
                         </p>
                         <div className='font-medium'>
-                            <a href="#">
-                                Find out more
+                            <a href={` ${Projects[1].link} `} target='_blank' rel="noreferrer">Find out more
+
                             </a>
 
                         </div>
@@ -102,17 +100,16 @@ export default function ProjCard() {
 
                 </div>
                 <div className='project-card  flex flex-col      overflow-hidden     h-80'>
-                    <img src={img3} alt="demo" className='object-cover w-full h-full' />
+                    <img src={Projects[2].img} alt="demo" className=' blur-sm object-cover w-full h-full' />
                     <div className='text-white absolute inset-auto p-10 translate-y-36 lg:max-w-[25%] md:max-w-[70%%] '>
                         <h2 className='font-semibold text-3xl mb-2'>
-                            Demo-3
+                            {Projects[2].name}
                         </h2>
                         <p className='mb-2 font-semibold text-xs'>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod
-                        </p>
+                            {Projects[2].description}                        </p>
                         <div className='font-medium'>
-                            <a href="#">
-                                Find out more
+                            <a href={` ${Projects[2].link} `} target='_blank' rel="noreferrer">Find out more
+
                             </a>
 
                         </div>
@@ -124,19 +121,19 @@ export default function ProjCard() {
 
                 <div className=' lg:col-span-2   flex flex-col overflow-hidden     h-80'>
 
-                    <img src={img4} alt="demo" className='   object-cover w-full h-full ' />
+                    <img src={Projects[3].img} alt="demo" className='blur-sm   object-cover w-full h-full ' />
 
                     <div className=' text-white absolute inset-auto p-10 translate-y-36 lg:max-w-[50%] md:max-w-[70%%] '>
                         <h2 className=' font-semibold text-3xl mb-2'>
-                            Demo-4
+                        {Projects[3].name}
                         </h2>
                         <p className='mb-2 font-semibold text-xs'>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto corporis accusamus quas asperiores commodi voluptatem totam,
-                        </p>
+                        {Projects[3].description}  
+                       </p>
                         <div className='font-medium'>
-                            <a href="#">Find out more
+                        <a href={` ${Projects[3].link} `} target='_blank' rel="noreferrer">Find out more
 
-                            </a>
+</a>
 
                         </div>
 

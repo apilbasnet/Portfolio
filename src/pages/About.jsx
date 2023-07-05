@@ -17,7 +17,7 @@ export default function About() {
             <p className='text-base lg:text-left font-medium'>
               I am an enthusiastic learner.
               Here are couple of languages and tools
-              <div> I've acquired the skills for:</div>
+              <div> I{"'"}ve acquired the skills for:</div>
             </p>
           </h2>
 
