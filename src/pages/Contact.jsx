@@ -1,6 +1,7 @@
 import React from "react";
 import Footer from "../components/Footer";
 import emailjs from "@emailjs/browser";
+import { ToastContainer, toast } from "react-toastify";
 
 export default function Contact() {
   const form = React.useRef();
@@ -17,11 +18,11 @@ export default function Contact() {
       )
       .then(
         (result) => {
-          console.log("Email sent successfully");
+          toast.success("Message sent successfully!");
           form.current.reset();
         },
         (error) => {
-          console.log("Failed to send email:", error);
+          toast.error("Failed to send message. Please try again.");
         }
       );
   };
@@ -81,6 +82,7 @@ export default function Contact() {
             >
               Submit
             </button>
+            <ToastContainer position="bottom-right" />
           </div>
         </form>
       </div>
