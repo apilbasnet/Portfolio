@@ -45,7 +45,7 @@ export default function About() {
           ABOUT ME
         </h2>
         <p >
-          Hi, My name is <b>Apil Basnet</b> and I am a  <b>student</b>  and  self-taught <b>Front-end developer from Nepal.</b> I love experimenting on UI/UX and transforming it in to such creative websites.
+          Hi, My name is <b>Apil Basnet</b> and I am a  <b>student</b>  and  self-taught <b>Full-Stack developer from Nepal.</b> I love experimenting on UI/UX and transforming it in to such creative websites.
         </p>
         <p>
           <br /> Currently studying <b>Bachelors in Computer Application</b>  through <b> Tribhuwan University. </b> Expecting to graduate in <b>2025.</b>
