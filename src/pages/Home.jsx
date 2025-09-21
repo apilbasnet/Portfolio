@@ -22,7 +22,7 @@ export default function home() {
           Apil
           <h1>Basnet</h1>
           <p className="text-5xl">
-            Frontend Developer
+            Full-Stack Developer
             <div>
               <button
                 className="bg-gray-900 rounded-none border-none box-border text-white cursor-pointer inline-block font-bold text-base  m-3 min-h-11 min-w-10 outline-none overflow-hidden px-5 py-2 relative text-center select-none touch-manipulation hover:opacity-75"
